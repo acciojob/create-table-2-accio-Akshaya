@@ -1,10 +1,10 @@
-function createTable() {
+ function createTable() {
     //Write your code here
-	let rn = prompt("Input number of rows");
-	let cn = prompt("Input number of columns");
+	let rnInput = prompt("Input number of rows");
+	let cnInput = prompt("Input number of columns");
 
-	rn = number(rn);
-	cn = number(cn);
+	let rn = parseInput(rn);
+	let cn = parseInput(cn);
 
 	if(isNaN(rn) || isNaN(cn)){
 		return ;
